@@ -1,10 +1,10 @@
 import T7 from 'template7';
-import Framework7 from 'framework7';
+import Framework7 from 'framework7-cn';
 
 // import F7 components
-import Tabs from 'framework7/components/tabs/tabs.js';
-import Toolbar from 'framework7/components/toolbar/toolbar.js';
-import Infinitescroll from 'framework7/components/infinite-scroll/infinite-scroll.js';
+import Tabs from 'framework7-cn/components/tabs/tabs.js';
+import Toolbar from 'framework7-cn/components/toolbar/toolbar.js';
+import Infinitescroll from 'framework7-cn/components/infinite-scroll/infinite-scroll.js';
 
 // Install F7 Components
 Framework7.use([Tabs, Toolbar, Infinitescroll]);
@@ -32,7 +32,7 @@ T7.registerPartial(
 );
 
 // Import F7 Styles
-import 'framework7/css/framework7.bundle.css';
+import 'framework7-cn/css/framework7.bundle.css';
 
 // Import Icons and App Custom Styles
 import '../css/icons.css';
@@ -67,6 +67,6 @@ var app = new Framework7({
 
   // Register service worker
   serviceWorker: {
-    path: '/HackerNews7/service-worker.js',
+    path: '/service-worker.js',
   },
 });
